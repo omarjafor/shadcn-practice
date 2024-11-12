@@ -10,12 +10,11 @@ import {
   AlertDialogTitle,
   AlertDialogTrigger,
 } from "@/components/ui/alert-dialog";
-import { Button } from "../ui/button";
 
 export default function AlertDialogInfo() {
   return (
     <AlertDialog>
-      <AlertDialogTrigger><Button>Alert Dialog</Button></AlertDialogTrigger>
+      <AlertDialogTrigger>Alert Dialog</AlertDialogTrigger>
       <AlertDialogContent>
         <AlertDialogHeader>
           <AlertDialogTitle>Are you absolutely sure?</AlertDialogTitle>

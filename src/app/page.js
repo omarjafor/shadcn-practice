@@ -6,12 +6,23 @@ import { Terminal } from "lucide-react";
 import Link from "next/link";
 
 export default function Home() {
+  const handle = () => {
+    console.log('alert dialog clicking')
+  }
   return (
-    <main className="flex flex-col items-center justify-between p-24 space-y-4">
-      <h2 className="scroll-m-20 border-b pb-2 text-3xl font-semibold tracking-tight first:mt-0">
-        The People of the Kingdom
-      </h2>
+    <main className="flex flex-col items-center justify-between p-16 space-y-4">
+      <div className="flex justify-between w-full">
+      <h1 className="scroll-m-20 text-4xl font-extrabold tracking-tight border-b lg:text-5xl">
+      Shadcn/ui Library Course
+      </h1>
       <ModeToggle />
+      </div>
+      <Button asChild>
+        <Link href="/usereducer">useReducer</Link>
+      </Button>
+      <Button asChild>
+        <Link href="/usecallback">useCallback</Link>
+      </Button>
       <Button asChild>
         <Link href="/accord">Alert</Link>
       </Button>
@@ -21,7 +32,7 @@ export default function Home() {
       <Button asChild>
         <Link href="/accord">Accordion</Link>
       </Button>
-      <AlertDialogInfo />
+      <AlertDialogInfo action={handle()}/>
     </main>
   );
 }
