@@ -1,6 +1,5 @@
 "use client";
 import React, { useState, useCallback } from "react";
-import { Button } from "@/components/ui/button";
 import Button2 from "@/components/Button";
 
 function ParentComponent() {

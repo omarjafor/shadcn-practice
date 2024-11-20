@@ -9,7 +9,7 @@ export default function Button2({myName, setIsOn, user}) {
         onClick={() => setIsOn(!myName)}
         className="px-4 py-2 font-medium text-white bg-blue-500 hover:bg-blue-600 transition-colors rounded"
       >
-        {myName ? "Turn Off" : "Turn On"} {user?.age}
+        {myName ? "Turn Off" : "Turn On"}
 
       </Button>
     </div>
