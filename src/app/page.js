@@ -6,6 +6,8 @@ import { Terminal } from "lucide-react";
 import Link from "next/link";
 
 export default function Home() {
+  const [isOn, setIsOn] = useState(false);
+  
   const handle = () => {
     console.log('alert dialog clicking')
   }
