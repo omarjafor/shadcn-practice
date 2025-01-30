@@ -6,11 +6,7 @@ import { Terminal } from "lucide-react";
 import Link from "next/link";
 
 export default function Home() {
-  const [isOn, setIsOn] = useState(false);
   
-  const handle = () => {
-    console.log('alert dialog clicking')
-  }
   return (
     <main className="flex flex-col items-center justify-between p-16 space-y-4">
       <div className="flex justify-between w-full">
@@ -34,7 +30,7 @@ export default function Home() {
       <Button asChild>
         <Link href="/accord">Accordion</Link>
       </Button>
-      <AlertDialogInfo action={handle()}/>
+      <AlertDialogInfo />
     </main>
   );
 }
